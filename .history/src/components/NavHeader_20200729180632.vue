@@ -1,12 +1,12 @@
 <template>
   <div>
-    index
+    header
   </div>
 </template>
 
 <script>
 export default {
-  name: "index",
+  name: "nav-header",
 };
 </script>
 

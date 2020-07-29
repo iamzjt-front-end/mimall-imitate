@@ -1,13 +1,11 @@
 <template>
   <div>
-    index
+    cart
   </div>
 </template>
 
 <script>
-export default {
-  name: "index",
-};
+export default {};
 </script>
 
 <style>
