@@ -33,6 +33,5 @@ export default {
 		} else {
 			delete val[key];
 		}
-		this.setItem(val);
 	},
 };

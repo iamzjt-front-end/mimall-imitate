@@ -26,13 +26,5 @@ export default {
 	getStorage() {
 		return JSON.parse(window.sessionStorage.getItem(STORAGE_KEY) || '{}');
 	},
-	clear(key, module_name) {
-		let val = this.getStorage();
-		if (module_name) {
-			delete val[module_name][key];
-		} else {
-			delete val[key];
-		}
-		this.setItem(val);
-	},
+	clear() {},
 };

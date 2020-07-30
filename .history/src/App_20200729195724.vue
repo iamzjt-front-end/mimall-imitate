@@ -5,16 +5,13 @@
 </template>
 
 <script>
-import storage from "./storage";
+import storage from "./storage/index";
 
 export default {
   name: "App",
   components: {},
   data() {
     return {};
-  },
-  mounted() {
-    storage.setItem("a", 1);
   },
 };
 </script>
