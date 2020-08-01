@@ -7,7 +7,6 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 // import env from './env';
 
-// mock开关
 const mock = true;
 if (mock) {
 	require('./mock/api');

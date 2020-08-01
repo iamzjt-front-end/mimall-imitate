@@ -23,12 +23,7 @@ export default {
 		// this.axios.get('/mock/user/login.json').then((res) => {
 		// 	this.res = res;
 		// });
-		// 通过easy-mock平台实现mock
-		// this.axios.get('/mock/user/login.json').then((res) => {
-		// 	this.res = res;
-		// });
-		// 本地集成mock.js
-		this.axios.get('/user/login').then((res) => {
+		this.axios.get('/mock/user/login.json').then((res) => {
 			this.res = res;
 		});
 	},

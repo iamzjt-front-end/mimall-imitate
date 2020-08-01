@@ -28,7 +28,7 @@ export default {
 		// 	this.res = res;
 		// });
 		// 本地集成mock.js
-		this.axios.get('/user/login').then((res) => {
+		this.axios.get('/mock/user/login.json').then((res) => {
 			this.res = res;
 		});
 	},
