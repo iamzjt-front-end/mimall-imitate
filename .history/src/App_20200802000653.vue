@@ -11,9 +11,7 @@ export default {
 	name: 'App',
 	components: {},
 	data() {
-		return {
-			res: {},
-		};
+		return {};
 	},
 	mounted() {
 		// console.log(storage);

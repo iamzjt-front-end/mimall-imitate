@@ -11,17 +11,12 @@ export default {
 	name: 'App',
 	components: {},
 	data() {
-		return {
-			res: {},
-		};
+		return {};
 	},
 	mounted() {
 		// console.log(storage);
 		// storage.setItem('a', 1);
 		// storage.setItem('user', { a: 1 }, 'user');
-		this.axios.get('/mock/user/login.json').then((res) => {
-			this.res = res;
-		});
 	},
 };
 </script>

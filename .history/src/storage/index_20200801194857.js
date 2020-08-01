@@ -8,14 +8,12 @@ export default {
 		if (module_name) {
 			let val = this.getItem(module_name);
 			val[key] = value;
-			this.setItem(module_name, val);
-		} else {
-			let val = this.getStorage();
-			val[key] = value;
-			Window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(val));
 		}
+		let val = this.getStorage();
+		val[key] = value;
+		Window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(val));
 	},
-	// 获取某一个模块下面的值  例：取user下面的userName
+	// 获取某一个模块下面的值
 	getItem(key, module_name) {
 		if (module_name) {
 			let val = this.getItem(module_name);
@@ -28,14 +26,5 @@ export default {
 		return JSON.parse(window.sessionStorage.getItem(STORAGE_KEY) || '{}');
 	},
 	// 清空某一个值
-	clear(key, module_name) {
-		let val = this.getStorage();
-		if (module_name) {
-			if (!val[module_name]) return;
-			delete val[module_name][key];
-		} else {
-			delete val[key];
-		}
-		Window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(val));
-	},
+	clear() {},
 };
